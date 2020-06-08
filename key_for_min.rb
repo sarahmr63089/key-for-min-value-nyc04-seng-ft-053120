@@ -4,18 +4,22 @@ require "pry"
 
 def key_for_min_value(name_hash) #-- how do i do this without this method?
   answer = nil
-  values_array = []
-  name_hash.each_value {|value|
-    values_array << value
-  }
-  smallest = values_array[0]
+  #values_array = []
+  #name_hash.each_value {|value|
+    #values_array << value
+  #}
+  #smallest = values_array[0]
   i = 0
   name_hash.each {|key, value|
     #smallest = value #always returns last value
+    if i == 0
+      smallest = value
+    end
     if value <= smallest
       smallest = value #how to get smallest to equal first value?
       answer = key
     end
+    i += 1
   }
   #binding.pry
   answer
