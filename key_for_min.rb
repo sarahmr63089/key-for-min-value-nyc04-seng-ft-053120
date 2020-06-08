@@ -10,6 +10,7 @@ def key_for_min_value(name_hash) #-- how do i do this without this method?
   #}
   #smallest = values_array[0]
   i = 0
+  smallest = nil
   name_hash.each {|key, value|
     #smallest = value #always returns last value
     if i == 0
