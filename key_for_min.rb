@@ -20,7 +20,7 @@ def key_for_min_value(name_hash) #-- how do i do this without this method?
       smallest = value #how to get smallest to equal first value?
       answer = key
     end
-    i += 1
+    #i += 1
   }
   #binding.pry
   answer
